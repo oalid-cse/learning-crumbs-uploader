@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms of Service</title>
+  <title>Terms of Service – Learning Crumbs Uploader</title>
+  <link rel="icon" href="logo.png">
   <style>
-    :root {
-      --navy: #182858;
-      --text: #1f2330;
-      --muted: #5b6275;
-    }
-
-    body {
-      margin: 0;
-      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      color: var(--text);
-      background: #fff;
-    }
-
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 32px 16px 48px;
-    }
-
-    h1,
-    h2 {
-      color: var(--navy);
-    }
-
-    a {
-      color: var(--navy);
-    }
-
-    .muted {
-      color: var(--muted);
-    }
+    :root { --navy: #182858; --yellow: #F8C058; --text: #1f2330; --muted: #5b6275; --line: #e5e7ee; --soft: #f6f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fff; }
+    a { color: var(--navy); }
+    .bar { background: #fff; border-bottom: 4px solid var(--yellow); }
+    .bar-in { max-width: 960px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); margin-right: auto; }
+    .brand img { width: 52px; height: auto; }
+    .brand b { font-size: 20px; line-height: 1.2; }
+    .brand small { display: block; font-size: 13px; color: var(--muted); font-weight: 500; }
+    nav { display: flex; flex-wrap: wrap; gap: 2px; }
+    nav a { white-space: nowrap; text-decoration: none; font-weight: 600; font-size: 15px; padding: 6px 10px; border-radius: 8px; }
+    nav a:hover, nav a[aria-current] { background: var(--soft); }
+    .hero { background: var(--navy); color: #fff; text-align: center; padding: 44px 16px; }
+    .hero h1 { margin: 0; font-size: 32px; }
+    .hero p { margin: 10px auto 0; max-width: 620px; color: var(--yellow); font-weight: 600; }
+    main { max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }
+    main h1 { color: var(--navy); margin: 24px 0 4px; }
+    h2 { color: var(--navy); margin-top: 32px; }
+    .note { background: var(--soft); border-left: 4px solid var(--yellow); padding: 14px 16px; border-radius: 8px; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+    .foot-in { max-width: 960px; margin: 0 auto; padding: 18px 16px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
   </style>
 </head>
-
 <body>
+  <header class="bar">
+    <div class="bar-in">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Learning Crumbs logo">
+        <span><b>Learning Crumbs Uploader</b><small>for the Learning Crumbs channel</small></span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" aria-current="page">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <h1>Terms of Service</h1>
-    <p class="muted">Learning Crumbs Uploader. Last updated: 27 September 2026.</p>
+    <p style="color:var(--muted)">Learning Crumbs Uploader. Last updated: 27 September 2026.</p>
 
     <h2>Who may use the tool</h2>
     <p>Learning Crumbs Uploader is a private tool. Only the owner of the Learning Crumbs YouTube channel uses it, for
@@ -67,9 +71,13 @@
 
     <h2>Contact</h2>
     <p><a href="mailto:abocoding404@gmail.com">abocoding404@gmail.com</a></p>
-
-    <p><a href="index.html">Back to home</a></p>
   </main>
-</body>
 
+  <footer>
+    <div class="foot-in">
+      <span>© 2026 Learning Crumbs</span>
+      <span>Contact: <a href="mailto:abocoding404@gmail.com">abocoding404@gmail.com</a></span>
+    </div>
+  </footer>
+</body>
 </html>
